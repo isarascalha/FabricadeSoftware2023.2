@@ -1,0 +1,40 @@
+#exercício 1
+
+comando = int(input("Digite 1 para ADICIONAR UMA TAREFA. \nDigite 2 para EXECUTAR A TAREFA. \nDigite 3 para REMOVER A TAREFA DA FILA: "))
+tarefa = input("Digite uma tarefa: ")
+lista = [tarefa]
+
+if comando == 1:
+    lista.append(tarefa)
+    print(f'{tarefa} foi adicionado à lista.')
+
+elif comando == 2:
+    print(f'{tarefa} em execução!')
+
+elif comando == 3:
+    tarefa = lista.pop()
+    print(f'{tarefa} foi removido da lista.')
+
+else:
+    print("Comando não encontrado.")
+
+
+#exercício 2
+
+comando = int(input("Digite 1 para ADICIONAR UMA TAREFA. \nDigite 2 para EXECUTAR A TAREFA. \nDigite 3 para REMOVER A TAREFA DA FILA: "))
+tarefa = input("Digite uma tarefa: ")
+pilha = [tarefa]
+
+if comando == 1:
+    pilha.append(tarefa)
+    print(f'{tarefa} foi adicionado à lista.')
+
+elif comando == 2:
+    print(f'{tarefa} em execução!')
+
+elif comando == 3:
+    tarefa = pilha.pop()
+    print(f'{tarefa} foi removido da lista.')
+
+else:
+    print("Comando não encontrado.")
