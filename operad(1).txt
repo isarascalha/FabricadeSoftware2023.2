@@ -1,0 +1,25 @@
+#exercício 1
+
+num = int(input("Digite um número: "))
+print(f'O número antecessor ao digitado é: {num - 1} O número sucessor ao digitado é: {num + 1}')
+
+#exercício 2
+
+num1 = float(input("Digite um número: "))
+num2 = float(input("Digite outro número: "))
+print(f'A soma dos números é: {num1 + num2} A subtração dos números é: {num1 - num2} A multiplicação dos números é: {num1 * num2} A divisão do 1º pelo 2º é: {num1/num2}')
+
+#exercício 3
+
+num1 = float(input("Digite um número: "))
+num2 = float(input("Digite outro número: "))
+if num1 > num2:
+   print("TRUE")
+else:
+   print("FALSE")
+
+#exercício 4
+
+tempc = float(input("Digite a temperatura em ºC: "))
+tempf = (tempc * 9)/5 + 32
+print("Essa temperatura em Fahrenheit é: ", tempf)

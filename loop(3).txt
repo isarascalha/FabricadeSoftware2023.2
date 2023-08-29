@@ -1,0 +1,61 @@
+#exercicio 1
+
+for x in range(11):
+    print(x)
+
+
+#exercicio 2
+
+for x in range(10, -1, -1):
+   print(x)
+
+
+#exercicio 3
+
+for x in range(0, 11, 2):
+    print(x)
+
+
+#exercicio 4
+
+num = int(input("Digite um número: "))
+
+for i in range(11):
+   print(f"{num} + {i} = {num+i}")
+
+
+#exercicio 5
+
+nome = str(input("Digite um nome: "))
+while nome != "parar":
+   print(nome)
+   nome = str(input("Digite um nome: "))
+
+
+#exercicio 6
+
+num = int(input("Digite um número: "))
+soma = 0
+
+while num != 0:
+   soma += num
+   print(soma)
+   num = int(input("Digite um número: "))
+
+
+#exercicio 7
+
+contm = 0
+conth = 0
+s = "str"
+while s != "sair":
+   s = str(input("Digite o sexo (F ou M): "))
+
+   if s == "F":
+      contm += 1
+
+   elif s == "M":
+      conth += 1
+
+else:
+   print(f'A quantidade de mulheres é {contm} e a de homens {conth}')
