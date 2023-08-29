@@ -13,7 +13,7 @@ elif comando == 2:
 
 elif comando == 3:
     lista.append(tarefa)
-    lista.pop(tarefa)
+    lista.pop(0)
     print(f'{tarefa} foi removido da lista.')
 
 else:
@@ -35,7 +35,7 @@ elif comando == 2:
 
 elif comando == 3:
     pilha.append(tarefa)
-    pilha.pop(tarefa)
+    pilha.pop()
     print(f'{tarefa} foi removido da lista.')
 
 else:
