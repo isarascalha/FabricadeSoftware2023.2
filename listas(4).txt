@@ -2,7 +2,7 @@
 
 comando = int(input("Digite 1 para ADICIONAR UMA TAREFA. \nDigite 2 para EXECUTAR A TAREFA. \nDigite 3 para REMOVER A TAREFA DA FILA: "))
 tarefa = input("Digite uma tarefa: ")
-lista = [tarefa]
+lista = []
 
 if comando == 1:
     lista.append(tarefa)
@@ -12,7 +12,8 @@ elif comando == 2:
     print(f'{tarefa} em execução!')
 
 elif comando == 3:
-    tarefa = lista.pop()
+    lista.append(tarefa)
+    lista.pop(tarefa)
     print(f'{tarefa} foi removido da lista.')
 
 else:
@@ -23,7 +24,7 @@ else:
 
 comando = int(input("Digite 1 para ADICIONAR UMA TAREFA. \nDigite 2 para EXECUTAR A TAREFA. \nDigite 3 para REMOVER A TAREFA DA FILA: "))
 tarefa = input("Digite uma tarefa: ")
-pilha = [tarefa]
+pilha = []
 
 if comando == 1:
     pilha.append(tarefa)
@@ -33,7 +34,8 @@ elif comando == 2:
     print(f'{tarefa} em execução!')
 
 elif comando == 3:
-    tarefa = pilha.pop()
+    pilha.append(tarefa)
+    pilha.pop(tarefa)
     print(f'{tarefa} foi removido da lista.')
 
 else:
