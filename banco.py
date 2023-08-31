@@ -22,6 +22,10 @@ class ContaBancaria():
             print('você não pode sacar esse valor.')
         self.saldo -= valor
 
+pessoa = ContaBancaria('pessoa', 0)
+pessoa.depositar(50)
+pessoa.mostrar_saldo()
+pessoa.conta()
 guilherme = ContaBancaria('guilherme', 0)
 guilherme.depositar(50)
 guilherme.mostrar_saldo()
